@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Citation Network Access</title>
+<style>
+:root {
+  --ink: #172026;
+  --muted: #60707a;
+  --line: #d4dde2;
+  --panel: #f7f9fa;
+  --accent: #006d77;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--ink);
+  background: #ffffff;
+}
+main {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 42px 22px;
+}
+h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+p {
+  margin: 0 0 22px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+.network-list {
+  display: grid;
+  gap: 12px;
+}
+.network-link {
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 16px 18px;
+  color: var(--ink);
+  text-decoration: none;
+  background: var(--panel);
+}
+.network-link:hover,
+.network-link:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+.network-link b {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+.network-link span {
+  color: var(--muted);
+  font-size: 13px;
+}
+</style>
+</head>
+<body>
+<main>
+  <h1>Citation Network Access</h1>
+  <p>Interactive HTML citation networks used in this report. Keep this file in the same folder as the two network HTML files.</p>
+  <div class="network-list">
+    <a class="network-link" href="fiber_photometry_30_journals_network.html">
+      <b>Fiber Photometry Citation Network</b>
+      <span>2005-2025 selected 30 journals; 390 nodes and 809 directed citation edges.</span>
+    </a>
+    <a class="network-link" href="fiber_photometry_biosensor_integrated_pubmed_network.html">
+      <b>Fiber Photometry x PubMed Biosensor Integrated Network</b>
+      <span>Integrated network with PubMed biosensor development papers; 423 nodes and 1,242 directed citation edges.</span>
+    </a>
+  </div>
+</main>
+</body>
+</html>
